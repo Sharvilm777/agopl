@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
           <div className="contactBox flex flex-col text-center mt-4 md:mt-0">
             <div className="contact text-2xl font-bold">
-              Contact: +91 9606 116 151
+              Contact: +91 9066445564
             </div>
             <span>Call/Message from 9am to 7pm (Mon to Fri)</span>
           </div>
