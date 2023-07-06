@@ -68,7 +68,7 @@ const CallBackForm = () => {
         />
         <button
           onClick={handleSubmit}
-          className="bg-green-700 pl-24 pr-24 pt-5 pb-5 rounded-md"
+          className="bg-green-700 mb-4 pl-24 pr-24 pt-5 pb-5 rounded-md"
         >
           Send
         </button>

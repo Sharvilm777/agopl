@@ -1,8 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
-const Carousel = ({ children: slides }) => {
+const Carousel = ({
+  children: slides,
+  autoSlide = true,
+  autoSlideInterval = 5000,
+}) => {
   const [curr, setCurr] = useState(0);
 
   const prev = () =>
@@ -16,6 +20,13 @@ const Carousel = ({ children: slides }) => {
       const updatedCurr = prevCurr === slides.length - 1 ? 0 : prevCurr + 1;
       return updatedCurr;
     });
+  useEffect(() => {
+    if (!autoSlide) return;
+    const slideInterval = setInterval(next, autoSlideInterval);
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, []);
 
   return (
     <div className="relative overflow-hidden ">

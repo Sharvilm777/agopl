@@ -1,14 +1,12 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { HiMenu } from "react-icons/hi";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    console.log("Hamburg clicked");
   };
 
   return (
