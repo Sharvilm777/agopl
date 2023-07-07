@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'A G Organics -  Working for Green',
-  description: '',
+  description: 'AGO Is The Core Manufacturer For Wide Range Of Insect Pheromones (Sex Pheromones, Aggregation Pheromone) Assuring High Purity With Best Price.',
 
 }
 

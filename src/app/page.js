@@ -37,7 +37,7 @@ export default function Home() {
         </h2>
       </div>
       <div
-        className="w-full lg:h-72 sm:h-96 h-[40rem] relative"
+        className="w-full lg:h-72 sm:h-96 h-[40rem] relative mt-4"
         style={{
           background: "rgba(58,108,54,0.84)",
         }}
@@ -78,7 +78,9 @@ export default function Home() {
         </h1>
       </div>
 
-      <CallBackForm />
+      <div>
+        <CallBackForm />
+      </div>
     </>
   );
 }
