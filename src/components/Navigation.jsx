@@ -53,24 +53,7 @@ export default function Navigation() {
               >
                 About
               </Link>
-              <Link
-                href={"/products/pheromones-blend"}
-                className="hover:text-green-500 my-1 sm:my-0"
-              >
-                pheromones-blend
-              </Link>
-              <Link
-                href={"/products/pheromones-lure-kit"}
-                className="hover:text-green-500 my-1 sm:my-0"
-              >
-                pheromones-lure-kit
-              </Link>
-              <Link
-                href={"/products/pheromones-traps"}
-                className="hover:text-green-500 my-1 sm:my-0"
-              >
-                pheromones-traps
-              </Link>
+              <Dropdown />
               <Link
                 href={"/products/fastra"}
                 className="hover:text-green-500 my-1 sm:my-0"
