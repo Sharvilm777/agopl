@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Dropdown = () => {
@@ -7,7 +8,7 @@ const Dropdown = () => {
         id="dropdownHoverButton"
         data-dropdown-toggle="dropdownHover"
         data-dropdown-trigger="hover"
-        className="hover:text-green-500 rounded-lg  px-5 py-2.5 text-center inline-flex items-center "
+        className="hover:text-green-500 rounded-lg px-5 py-2.5 text-center inline-flex items-center"
         type="button"
       >
         Products{" "}
@@ -37,52 +38,52 @@ const Dropdown = () => {
           aria-labelledby="dropdownHoverButton"
         >
           <li>
-            <a
-              href="#"
+            <Link
+              href="/products/pheromone-blend"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Pheromone blend
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              href="/products/pheromone-lure"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Pheromone lure and Kits
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              href="/products/pheromone-traps"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Pheromone traps
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              href="bio-fertilizers"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Bio-fertilizers
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              href="micro-nutrients"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Micro-Nutrients
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              href="neem-seed-powder"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Neem seed Powder and pillets
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
