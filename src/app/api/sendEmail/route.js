@@ -5,12 +5,12 @@ const nodemailer = require('nodemailer');
 export async function POST(req) {
     const body = await req.json();
     const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 587,
-        secure: false,
+        host: 'smtp.agopl.com',
+        port: 465,
+        secure: true,
         auth: {
-            user: 'netflixwala77@gmail.com',
-            pass: 'gbafelwcjdnrfupm',
+            user: 'info@agopl.com',
+            pass: 'agopl@2023',
         },
     });
     const sendEmail = (mailOptions) => {
@@ -27,14 +27,14 @@ export async function POST(req) {
         });
     };
     const mailOptions = {
-        from: 'netflixwala77@gmail.com',
+        from: 'info@agopl.com',
         to: body.email,
         subject: 'Thank You for Your Request',
         text: `Dear ${body.name},\n\nThank you for your callback request. We will get back to you soon.\n\nRegards,\nA G Organics`,
     };
     const yourMailOptions = {
-        from: 'netflixwala77@gmail.com',
-        to: 'netflixwala77@gmail.com', // Replace with your Gmail account email
+        from: 'info@agopl.com',
+        to: 'info@agopl.com', // Replace with your Gmail account email
         subject: `New Callback Request from ${body.name} `,
         text: `Hii Sahana You got new Call Back request from ${body.name}\nContact Number: ${body.phoneNumber}\nEmail: ${body.email}`,
     };

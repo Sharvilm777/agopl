@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Dropdown from "./Dropdown";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,24 +26,9 @@ export default function Navigation() {
           <Link href={"/about"} className="hover:text-green-500 my-1 sm:my-0">
             About
           </Link>
-          <Link
-            href={"/products/pheromones-blend"}
-            className="hover:text-green-500 my-1 sm:my-0"
-          >
-            pheromones-blend
-          </Link>
-          <Link
-            href={"/products/pheromones-lure-kit"}
-            className="hover:text-green-500 my-1 sm:my-0"
-          >
-            pheromones-lure-kit
-          </Link>
-          <Link
-            href={"/products/pheromones-traps"}
-            className="hover:text-green-500 my-1 sm:my-0"
-          >
-            pheromones-traps
-          </Link>
+
+          <Dropdown />
+
           <Link
             href={"/products/fastra"}
             className="hover:text-green-500 my-1 sm:my-0"

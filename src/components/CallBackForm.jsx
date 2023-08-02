@@ -73,7 +73,7 @@ const CallBackForm = () => {
           <form
             method="POST"
             onSubmit={handleSubmit}
-            className="form flex sm:flex-row flex-col justify-evenly items-center "
+            className="form flex lg:flex-row flex-col justify-evenly items-center "
           >
             <input
               type="text"
