@@ -6,7 +6,8 @@ export async function GET(req) {
     const slug = req.nextUrl.searchParams.get("slug");
     try {
         const db = await connectToDatabase();
-        const collection = db.collection('products');
+        const collection = db.collection('products-list');
+        console.log(slug);
 
         const document = await collection.findOne({ slug: slug });
 

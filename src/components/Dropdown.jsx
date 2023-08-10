@@ -63,7 +63,7 @@ const Dropdown = () => {
           </li>
           <li>
             <Link
-              href="bio-fertilizers"
+              href="/products/bio-fertilizers"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Bio-fertilizers
@@ -71,7 +71,7 @@ const Dropdown = () => {
           </li>
           <li>
             <Link
-              href="micro-nutrients"
+              href="/products/micro-nutrients"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Micro-Nutrients
@@ -79,7 +79,7 @@ const Dropdown = () => {
           </li>
           <li>
             <Link
-              href="neem-seed-powder"
+              href="/products/neem-seed-powder"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Neem seed Powder and pillets

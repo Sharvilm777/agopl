@@ -45,13 +45,13 @@ const product = () => {
               </div>
 
               <div className="">
-                <div class="mb-2">60 days</div>
-                <div class="mb-2">Insect Water Trap 1.6 L</div>
-                <div class="mb-2">12-16 traps</div>
+                <div className="mb-2">60 days</div>
+                <div className="mb-2">Insect Water Trap 1.6 L</div>
+                <div className="mb-2">12-16 traps</div>
                 <div className="mb-2"></div>
-                <div class="mb-2"> Uniform distribution</div>
-                <div class="mb-2"> 1 year from the date of manufacture</div>
-                <div class="mb-2">Tomato,Brinjal, Potato</div>
+                <div className="mb-2"> Uniform distribution</div>
+                <div className="mb-2"> 1 year from the date of manufacture</div>
+                <div className="mb-2">Tomato,Brinjal, Potato</div>
               </div>
             </div>
           </div>
