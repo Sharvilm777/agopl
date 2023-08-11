@@ -39,7 +39,7 @@ const Dropdown = () => {
         >
           <li>
             <Link
-              href="/products/pheromone-blend"
+              href="/products/pheromones-blend"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Pheromone blend
@@ -47,7 +47,7 @@ const Dropdown = () => {
           </li>
           <li>
             <Link
-              href="/products/pheromone-lure"
+              href="/products/pheromones-lure"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Pheromone lure and Kits
@@ -55,7 +55,7 @@ const Dropdown = () => {
           </li>
           <li>
             <Link
-              href="/products/pheromone-traps"
+              href="/products/pheromones-traps"
               className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
             >
               Pheromone traps
