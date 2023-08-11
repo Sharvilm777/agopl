@@ -2,15 +2,27 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Page({ params }) {
+  const reqOptions = {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
   const data = await fetch(
-    `http://localhost:3000/api/products-list?slug=${params.slug}`
+    `https://agopl.vercel.app/api/products-list?slug=${params.slug}`
   );
   const res = await data.json();
   console.log(res);
   res.products.map((product) => {
     console.log(product.product_slug);
   });
-  return <div>product {params.slug}</div>;
+  return (
+    <div>
+      {res.products.map((product) => {
+        return <div key={product.product_slug}>{product.product_slug}</div>;
+      })}
+    </div>
+  );
 
   // return (
   //   <div className="flex flex-wrap gap-5 justify-center mt-5">
