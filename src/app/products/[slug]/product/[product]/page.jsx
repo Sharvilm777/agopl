@@ -1,11 +1,12 @@
 import ImageSlider from "@/components/ImageSlider";
 export default async function Page({ params }) {
+  const data = await fetch(
+    `http://localhost:3000/api/products?slug=${params.product}`
+  );
+  const res = await data.json();
+  console.log(res);
   return <div>product {params.product}</div>;
-  // const data = await fetch(
-  //   `http://localhost:3000/api/products?slug=${params.product}`
-  // );
-  // const res = await data.json();
-  // console.log(res);
+
   // return (
   //   <div>
   //     <div className="container  flex flex-row">

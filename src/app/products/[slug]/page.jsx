@@ -2,15 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Page({ params }) {
+  const data = await fetch(
+    `http://localhost:3000/api/products-list?slug=${params.slug}`
+  );
+  const res = await data.json();
+  console.log(res);
+  res.products.map((product) => {
+    console.log(product.product_slug);
+  });
   return <div>product {params.slug}</div>;
-  // const data = await fetch(
-  //   `http://localhost:3000/api/products-list?slug=${params.slug}`
-  // );
-  // const res = await data.json();
-  // console.log(res);
-  // res.products.map((product) => {
-  //   console.log(product.product_slug);
-  // });
+
   // return (
   //   <div className="flex flex-wrap gap-5 justify-center mt-5">
   //     {res.products.map((product) => {
