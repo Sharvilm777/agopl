@@ -1,6 +1,6 @@
 import ImageSlider from "@/components/ImageSlider";
 export default async function Page({ params }) {
-  console.log(params.product);
+
   const data = await fetch(
     `https://agopl.vercel.app/api/products?slug=${params.product}`
   );
