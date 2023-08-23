@@ -3,6 +3,7 @@ import React from "react";
 import CallBackForm from "@/components/CallBackForm";
 
 import ImageSlider from "@/components/ImageSlider";
+import MOU from "./MOU";
 
 const HomeScreen = () => {
   const images = [{ original: "/slide1.gif" }, { original: "/slide2.jpg" }];
@@ -59,6 +60,9 @@ const HomeScreen = () => {
         <h1 className="font-bold text-center text-6xl mr-5 ml-5 p-4">
           Most Efficient Ways To Control Insect Population’s
         </h1>
+      </div>
+      <div>
+        <MOU />
       </div>
       <div>
         <CallBackForm />
