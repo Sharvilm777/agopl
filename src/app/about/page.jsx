@@ -61,12 +61,12 @@ const About = () => {
         Working for Green: Our Commitment to Organic Farming
       </h2>
       <p className="text-lg m-3">
-        "Working for Green" isn't just a tagline; it's the ethos that guides
-        every facet of AG Organicz. As stewards of the environment, we recognize
-        the urgent need to shift away from conventional practices that harm our
-        planet. Through extensive research, sustainable processes, and a
-        holistic approach, we are paving the way for a more sustainable and
-        regenerative agricultural future.
+        &quot;Working for Green&quot; isn&#39;t just a tagline it&#39;s the
+        ethos that guides every facet of AG Organicz. As stewards of the
+        environment, we recognize the urgent need to shift away from
+        conventional practices that harm our planet. Through extensive research,
+        sustainable processes, and a holistic approach, we are paving the way
+        for a more sustainable and regenerative agricultural future.
       </p>
       <h2 className="flex items-center font-bold text-xl">
         {" "}
@@ -77,10 +77,10 @@ const About = () => {
       </h2>
       <p className="text-lg m-3">
         We invite you to be a part of the AG Organicz family, where innovation
-        meets integrity and sustainability is more than a concept – it's a way
-        of life. Together, we can nurture growth, cultivate change, and build a
-        world where organic farming isn't just a choice, but a conscious
-        responsibility.
+        meets integrity and sustainability is more than a concept – it&#39;s a
+        way of life. Together, we can nurture growth, cultivate change, and
+        build a world where organic farming isn&#39;t just a choice, but a
+        conscious responsibility.
       </p>
     </div>
   );
