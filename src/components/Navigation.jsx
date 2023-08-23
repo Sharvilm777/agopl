@@ -54,12 +54,7 @@ export default function Navigation() {
                 About
               </Link>
               <Dropdown />
-              <Link
-                href={"/products/fastra"}
-                className="hover:text-green-500 my-1 sm:my-0"
-              >
-                fastra
-              </Link>
+
               <Link
                 href={"/contact"}
                 className="hover:text-green-500 my-1 sm:my-0"
