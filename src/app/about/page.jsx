@@ -1,7 +1,18 @@
+import ImageSlider from "@/components/ImageSlider";
 import React from "react";
 import { AiOutlineCaretRight } from "react-icons/ai";
 
 const About = () => {
+  const stallImages = [
+    { original: "/stall/stall-1.jpeg" },
+    { original: "/stall/stall-2.jpeg" },
+    { original: "/stall/stall-3.jpeg" },
+    { original: "/stall/stall-4.jpeg" },
+    { original: "/stall/stall-5.jpeg" },
+    { original: "/stall/stall-6.jpeg" },
+    { original: "/stall/stall-7.jpeg" },
+    { original: "/stall/stall-8.jpeg" },
+  ];
   return (
     <div className="m-5">
       <h1 className="text-center font-bold text-3xl">Welcome to AG Organicz</h1>
@@ -82,6 +93,15 @@ const About = () => {
         build a world where organic farming isn&#39;t just a choice, but a
         conscious responsibility.
       </p>
+      <div>
+        <h1 className="text-3xl text-center font-semibold m-2">
+          AG Organics - Our Journey{" "}
+        </h1>
+        <h1 className="text-xl text-center m-4">
+          A Glimpse into Our Stall Deployments
+        </h1>
+        <ImageSlider images={stallImages} />
+      </div>
     </div>
   );
 };
